@@ -1,5 +1,7 @@
 package com.orangeaterz.designpatterns.factory;
 
+import java.util.ArrayList;
+
 public class ConcretFactory extends Factory {
 
     @Override
@@ -13,5 +15,10 @@ public class ConcretFactory extends Factory {
         }
 
         return (T) product;
+    }
+
+    public <T> T create(Class c) {
+
+        return null;
     }
 }
