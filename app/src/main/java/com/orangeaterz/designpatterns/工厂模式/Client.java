@@ -1,4 +1,4 @@
-package com.orangeaterz.designpatterns.factory;
+package com.orangeaterz.designpatterns.工厂模式;
 
 
 public class Client {

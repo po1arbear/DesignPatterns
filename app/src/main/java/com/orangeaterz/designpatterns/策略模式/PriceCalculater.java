@@ -1,4 +1,4 @@
-package com.orangeaterz.designpatterns.strategy;
+package com.orangeaterz.designpatterns.策略模式;
 
 /**
  * 策略模式

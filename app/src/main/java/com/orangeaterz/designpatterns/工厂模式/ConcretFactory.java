@@ -1,6 +1,4 @@
-package com.orangeaterz.designpatterns.factory;
-
-import java.util.ArrayList;
+package com.orangeaterz.designpatterns.工厂模式;
 
 public class ConcretFactory extends Factory {
 
