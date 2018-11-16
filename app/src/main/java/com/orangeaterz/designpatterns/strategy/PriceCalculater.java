@@ -3,8 +3,12 @@ package com.orangeaterz.designpatterns.strategy;
 /**
  * 策略模式
  * 优点：
- * 通过建立抽象，将不同的策略构建成一个具体的策略实现，通过不同的策略实现算法替换。
- * 在简化逻辑，结构的同时，增强了系统的可读性、稳定性、可扩展性。
+ * 结构清晰明了、使用简单直观
+ * 耦合度相对而言较低，扩展方便
+ * 操作封装也更彻底，数据更为安全
+ * <p>
+ * 缺点：
+ * 随着策略的增加，子类也会变得繁多
  */
 public class PriceCalculater {
     private CalculateStrategy mCalculateStrategy;
@@ -24,6 +28,7 @@ public class PriceCalculater {
         PriceCalculater priceCalculater = new PriceCalculater();
         priceCalculater.setStrategy(new TaxiStrategy());
         priceCalculater.calculate(20);
+
     }
 
 }
