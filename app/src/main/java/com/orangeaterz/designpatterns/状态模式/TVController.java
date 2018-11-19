@@ -1,5 +1,7 @@
 package com.orangeaterz.designpatterns.状态模式;
 
+import android.net.wifi.WifiManager;
+
 public class TVController implements PowerController {
     private TVState state = new PowerOffState();
     public static TVController INSTANCE;
