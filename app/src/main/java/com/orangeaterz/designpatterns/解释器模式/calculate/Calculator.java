@@ -16,15 +16,23 @@ public class Calculator {
         for (int i = 0; i < elements.length; i++) {
             String element = elements[i];
 
-            if (!element.equals("+")) { //数字
-                NumberExpression numberExpression = new NumberExpression(Integer.valueOf(element));
-                expressions.push(numberExpression);
-            } else { //+号
+            if (element.equals("+")) {
+
                 AbstractExpression expression1 = expressions.pop();
                 AbstractExpression expression2 = new NumberExpression(Integer.valueOf(elements[i + 1]));
                 i = i + 1;
                 AddExpression addExpression = new AddExpression(expression1, expression2);
                 expressions.push(addExpression);
+            } else if (element.equals("-")) {
+                AbstractExpression expression1 = expressions.pop();
+                AbstractExpression expression2 = new NumberExpression(Integer.valueOf(elements[i + 1]));
+                i = i + 1;
+                SubstractExpression substractExpression = new SubstractExpression(expression1, expression2);
+                expressions.push(substractExpression);
+            } else { //数字
+                NumberExpression numberExpression = new NumberExpression(Integer.valueOf(element));
+                expressions.push(numberExpression);
+
             }
         }
 
