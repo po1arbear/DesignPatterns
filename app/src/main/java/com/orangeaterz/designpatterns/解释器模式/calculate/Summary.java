@@ -13,5 +13,5 @@ package com.orangeaterz.designpatterns.解释器模式.calculate;
  * 构建多棵抽象语法树的情况，因此对于复杂的文法并不推荐使用解释器模式
  */
 public class Summary {
-    
+
 }
