@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.PorterDuff;
+import android.util.AttributeSet;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -13,8 +14,10 @@ public class DrawCanvas extends SurfaceView implements SurfaceHolder.Callback {
     private DrawInvoker mInvoker; //绘制线程
     private DrawThread mThread; //绘制线程
 
-    public DrawCanvas(Context context) {
-        super(context);
+
+
+    public DrawCanvas(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
         mInvoker = new DrawInvoker();
         mThread = new DrawThread();
         getHolder().addCallback(this);

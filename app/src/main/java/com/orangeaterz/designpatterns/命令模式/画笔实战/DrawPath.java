@@ -5,8 +5,8 @@ import android.graphics.Paint;
 import android.graphics.Path;
 
 public class DrawPath implements IDraw {
-    Path path;
-    Paint paint;
+    public Path path;
+    public Paint paint;
 
     @Override
     public void draw(Canvas canvas) {

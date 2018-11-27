@@ -4,10 +4,10 @@ import android.graphics.Path;
 
 public interface IBrush {
 
-    void down(Path path, int x, int y);
+    void down(Path path, float x, float y);
 
-    void move(Path path, int x, int y);
+    void move(Path path, float x, float y);
 
-    void up(Path path, int x, int y);
+    void up(Path path, float x, float y);
 
 }
