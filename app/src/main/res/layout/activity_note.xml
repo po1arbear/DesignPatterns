@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
+    <com.orangeaterz.designpatterns.备忘录模式.便签实战.NoteEditText
         android:id="@+id/et"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

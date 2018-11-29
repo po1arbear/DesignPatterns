@@ -8,7 +8,7 @@ public class NoteCaretaker {
 
     public static final int MAX = 30;
 
-    private List<Note> notes = new ArrayList<>(MAX);
+    private List<Note> mNotes = new ArrayList<>(MAX);
     private int mIndex;
 
     public static NoteCaretaker getInstance() {
@@ -23,10 +23,25 @@ public class NoteCaretaker {
     }
 
     public void saveNote(Note note) {
-        if (notes.size() >= MAX) {
-            notes.remove(0);
+        if (mNotes.size() >= MAX) {
+            mNotes.remove(0);
         }
-        notes.add(note);
+        mNotes.add(note);
+        mIndex = mNotes.size() - 1;
+    }
+
+    public Note getPreNote() {
+        if (mIndex > 0) {
+            mIndex--;
+        }
+        return mNotes.get(mIndex);
+    }
+
+    public Note getNextNote() {
+        if (mIndex < mNotes.size() - 1) {
+            mIndex++;
+        }
+        return mNotes.get(mIndex);
     }
 
 }
