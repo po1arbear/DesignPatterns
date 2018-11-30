@@ -23,6 +23,11 @@
         </activity>
 
         <activity android:name=".备忘录模式.便签实战.NoteActivity">
+
+
+        </activity>
+
+        <activity android:name=".XposedActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,8 +35,6 @@
             </intent-filter>
 
         </activity>
-
-
 
 
     </application>
