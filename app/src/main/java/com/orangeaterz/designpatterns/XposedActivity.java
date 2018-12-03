@@ -17,7 +17,7 @@ public class XposedActivity extends AppCompatActivity {
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tv.setText("嘻嘻");
+                tv.setText("点击修改了");
             }
         });
     }
