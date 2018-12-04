@@ -11,7 +11,7 @@ public class Client {
         while (iterator.hasNext()) {
             System.out.println("ClientIterator:" + iterator.next());
         }
-
     }
+
 }
 
