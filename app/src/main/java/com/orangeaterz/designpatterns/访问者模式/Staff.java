@@ -8,8 +8,9 @@ public abstract class Staff {
 
     public Staff(String aName) {
         this.name = aName;
-        kpi = new Random().nextInt(10);
-
+        kpi = new Random().nextInt(10000);
     }
+
+    public abstract void accept(Visitor visitor);
 
 }
