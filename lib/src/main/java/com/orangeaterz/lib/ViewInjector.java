@@ -1,4 +1,4 @@
-package com.orangeaterz.designpatterns.访问者模式.注解实战;
+package com.orangeaterz.lib;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
