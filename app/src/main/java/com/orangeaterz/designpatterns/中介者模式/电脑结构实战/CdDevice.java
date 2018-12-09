@@ -12,7 +12,7 @@ public class CdDevice extends Colleague {
     }
 
     public void load() {
-        data = "视频数据，音频数据";
+        data = "视频数据,音频数据";
         //通知中介者加载数据
         mediator.changed(this);
     }

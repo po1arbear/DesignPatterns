@@ -15,6 +15,7 @@ public class CPU extends Colleague {
         String[] tmp = data.split(",");
         dataVideo = tmp[0];
         dataSound = tmp[1];
+        mediator.changed(this);
     }
 
     public String getVideoData() {

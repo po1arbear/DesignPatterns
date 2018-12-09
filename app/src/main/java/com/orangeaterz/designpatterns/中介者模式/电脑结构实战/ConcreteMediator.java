@@ -25,22 +25,22 @@ public class ConcreteMediator extends Mediator {
         graphicsCard.videoPlay(cpu.getVideoData());
     }
 
-    public Mediator cpu(CPU cpu) {
+    public ConcreteMediator cpu(CPU cpu) {
         this.cpu = cpu;
         return this;
     }
 
-    public Mediator graphicsCard(GraphicsCard graphicsCard) {
+    public ConcreteMediator graphicsCard(GraphicsCard graphicsCard) {
         this.graphicsCard = graphicsCard;
         return this;
     }
 
-    public Mediator soundCard(SoundCard soundCard) {
+    public ConcreteMediator soundCard(SoundCard soundCard) {
         this.soundCard = soundCard;
         return this;
     }
 
-    public Mediator cdDevice(CdDevice cdDevice) {
+    public ConcreteMediator cdDevice(CdDevice cdDevice) {
         this.cdDevice = cdDevice;
         return this;
     }
