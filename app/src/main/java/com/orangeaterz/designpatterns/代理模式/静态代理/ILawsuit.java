@@ -1,4 +1,4 @@
-package com.orangeaterz.designpatterns.代理模式;
+package com.orangeaterz.designpatterns.代理模式.静态代理;
 
 public interface ILawsuit {
     //提交申请

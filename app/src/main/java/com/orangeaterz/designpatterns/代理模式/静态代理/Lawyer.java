@@ -1,4 +1,6 @@
-package com.orangeaterz.designpatterns.代理模式;
+package com.orangeaterz.designpatterns.代理模式.静态代理;
+
+import com.orangeaterz.designpatterns.代理模式.静态代理.ILawsuit;
 
 public class Lawyer implements ILawsuit {
     private ILawsuit lawsuit;
