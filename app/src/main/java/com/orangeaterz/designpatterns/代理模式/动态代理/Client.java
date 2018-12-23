@@ -15,7 +15,7 @@ public class Client {
         //获取被代理类的classLoader
         ClassLoader loader = lawsuit.getClass().getClassLoader();
         //构造一个代理者律师
-        ILawsuit lawyer = (Lawyer) Proxy.newProxyInstance(loader, new Class[]{Lawyer.class}, dynamicPorxy);
+        ILawsuit lawyer = (Lawyer) Proxy.newProxyInstance(loader, new Class[]{ILawsuit.class}, dynamicPorxy);
 
         lawyer.burden();
         lawyer.defend();
