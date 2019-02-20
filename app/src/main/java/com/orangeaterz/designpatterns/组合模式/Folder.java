@@ -11,17 +11,17 @@ public class Folder extends Dir {
 
     @Override
     public void addDir(Dir dir) {
-
+        dirs.add(dir);
     }
 
     @Override
     public void rmDir(Dir dir) {
-
+        dirs.remove(dir);
     }
 
     @Override
     public void clear() {
-
+        dirs.clear();
     }
 
     @Override
